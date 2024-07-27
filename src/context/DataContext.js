@@ -10,8 +10,19 @@ const DataContext = createContext({})
 
 export const DataProvider = ({children}) => {
 
+var [posts,setNewPosts] = useState([{
+  id: 1,
+  title: "My First Post",
+  datetime: "July 26, 2024 7:11:01 PM",
+  body: "Today I bought Brand New Oneplus 11R Device"
+},
+{
+  id: 2,
+  title: "Second Post",
+  datetime: "July 26, 2024 7:15:54 PM",
+  body: "Today I saw the Rayaan Movie it's fantastic...."
+}]);
     
-var [posts,setNewPosts] = useState([]);
 var [search, setSearch] = useState('');
 var [searchResults , setSearchResults] = useState([]);
 var [title,setTitle] = useState('');
