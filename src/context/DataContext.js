@@ -20,7 +20,7 @@ var [posts,setNewPosts] = useState([{
   id: 2,
   title: "Second Post",
   datetime: "July 26, 2024 7:15:54 PM",
-  body: "Today I saw the Rayaan Movie it's fantastic...."
+  body: "Today I saw the Rayaan Movie it's fantastic"
 },
 {
   id: 3,
