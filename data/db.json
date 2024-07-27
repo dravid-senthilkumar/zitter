@@ -1,0 +1,16 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "My First Post",
+      "datetime": "July 26, 2024 7:11:01 PM",
+      "body": "Today I bought Brand New Oneplus 11R Device"
+    },
+    {
+      "id": "11",
+      "title": "Second Post",
+      "datetime": "July 26, 2024 7:15:54 PM",
+      "body": "Today I saw the Rayaan Movie it's fantastic...."
+    }
+  ]
+}
