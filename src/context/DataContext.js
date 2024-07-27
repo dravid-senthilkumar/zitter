@@ -21,6 +21,24 @@ var [posts,setNewPosts] = useState([{
   title: "Second Post",
   datetime: "July 26, 2024 7:15:54 PM",
   body: "Today I saw the Rayaan Movie it's fantastic...."
+},
+{
+  id: 3,
+  title: "I'ts Third Post",
+  datetime: "July 27, 2024 9:15:54 AM",
+  body: "last may 31st 2024 I'll attended my last day of Collage"
+},
+{
+  id: 4,
+  title: "4rth Post",
+  datetime: "July 27, 2024 11:10:59 AM",
+  body: "Last week I successfully completed my react course it's more interesting to learn"
+},
+{
+  id: 5,
+  title: "5th Post",
+  datetime: "July 27, 2024 12:15:14 PM",
+  body: "Anyone Online"
 }]);
     
 var [search, setSearch] = useState('');
