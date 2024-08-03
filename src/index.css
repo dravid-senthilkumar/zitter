@@ -10,6 +10,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Outfit;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -43,14 +44,14 @@ body {
   align-items: center;
   border: 1px solid #333;
   box-shadow: 0px 0px 15px gray;
-  background-color: #5bc5d3;
+  background-color: #aed8dd;
 }
 
 /* #66d8f5 */
 
 .Header, .Footer {
   width: 100%;
-  background-color: #66d8f5;
+  background-color: rgb(2, 155, 155);
   padding: 1rem;
   display: flex;
   justify-content: space-between;
@@ -79,9 +80,9 @@ body {
 }
 
  .Footer {
-  background-color: #333;
+  background-color: #323232;
   color: #eee;
-  padding: 0.75rem;
+  padding: 0.40rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,7 +91,7 @@ body {
 
 .Nav {
   width: 100%;
-  background-color: #333;
+  background-color: #323232;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -124,6 +125,7 @@ body {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
+  padding-right: 5px;
 }
 
 .Nav li {
@@ -153,18 +155,26 @@ body {
   cursor: pointer;
 }
 
-.Home, .NewPost, .PostPage, .About, .Missing, .post,.newPostForm,.EditPost {
+.Home, .NewPost, .About, .Missing, .post, .newPostForm,.EditPost {
   width: 100%;
   flex-grow: 1;
   padding: 1rem;
   overflow-y: auto;
- background-color: #5bc5d3;
+  /* background-color: rgba(255, 255, 255, 0.493); */
+}
+.NewPost form{
+  background-color: transparent;
+}
+
+.editPost{
+  /* height: 70vh; */
+  background-color: transparent;
 }
 
 .post {
   margin-top: 1rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 0.1px solid grey;
 }
 
 .Home .post a {
@@ -202,6 +212,10 @@ body {
   margin-top: 1rem;
 }
 
+.newPostForm input, textarea{
+  background-color: #eaeaea;
+}
+
 .newPostForm input[type='text'], 
 .newPostForm textarea {
   font-family: 'Open Sans', sans-serif;
@@ -212,6 +226,8 @@ body {
   border-radius: 0.25rem;
   margin-right: 0.25rem;
   outline: none;
+  border: none;
+  margin-top: 5px;
 }
 
 .newPostForm textarea {
@@ -232,7 +248,6 @@ body {
 }
 
 .newPostForm button:hover{
-  background-color: rgb(34, 163, 1);
   color: white;
   transition: 0.3s;
 }
@@ -314,4 +329,12 @@ body {
     font-size: 3rem;
   }
 
+}
+
+@media (max-width:750px) {
+  .Nav ul{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding-left: 5px;
+  }
 }

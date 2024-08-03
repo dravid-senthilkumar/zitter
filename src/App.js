@@ -8,12 +8,12 @@ import PostPage from "./PostPage"
 import About from "./About"
 import Missing from "./Missing"
 import EditPost from "./EditPost"
-import { DataProvider } from "./context/DataContext"
+
 
 function App() {
   return (
+    <>
     <div className="App">
-      <DataProvider>
             <Header title={"ZiTTeR"}/>
             <Nav/>
             <Routes>
@@ -26,9 +26,9 @@ function App() {
                 <Route path="/about" element={<About/>} />
                 <Route path="*" element={<Missing/>}/>     
           </Routes>
-            <Footer />
-      </DataProvider>
+          <Footer />
     </div>
+    </>
   );
 }
 

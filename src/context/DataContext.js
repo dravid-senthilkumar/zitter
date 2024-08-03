@@ -11,7 +11,38 @@ const DataContext = createContext({})
 export const DataProvider = ({children}) => {
 
     
-var [posts,setNewPosts] = useState([]);
+var [posts,setNewPosts] = useState([{
+  id: 1,
+  title: "My First Post",
+  datetime: "July 26, 2024 7:11:01 PM",
+  body: "Today I bought Brand New Oneplus 11R Device"
+},
+{
+  id: 2,
+  title: "Second Post",
+  datetime: "July 26, 2024 7:15:54 PM",
+  body: "Today I saw the Rayaan Movie it's fantastic...."
+},
+{
+  id: 3,
+  title: "I'ts Third Post",
+  datetime: "July 27, 2024 9:15:54 AM",
+  body: "last may 31st 2024 I'll attended my last day of Collage"
+},
+{
+  id: 4,
+  title: "4rth Post",
+  datetime: "July 27, 2024 11:10:59 AM",
+  body: "Last week I successfully completed my react course it's more interesting to learn"
+},
+{
+  id: 5,
+  title: "5th Post",
+  datetime: "July 27, 2024 12:15:14 PM",
+  body: "Anyone Online"
+}]);
+
+
 var [search, setSearch] = useState('');
 var [searchResults , setSearchResults] = useState([]);
 var [title,setTitle] = useState('');
@@ -33,16 +64,16 @@ useEffect(() =>{
 // //   // }
 // //   // fetchApi();
 var storedData = JSON.parse(localStorage.getItem('zitter_app'));
-  if(storedData) setNewPosts(storedData);
+if (storedData) {
+  setNewPosts(storedData);
+}
 },[])
 
 useEffect(() => {
   const filteredResults = posts.filter((post) => 
-    post.title.toLowerCase().includes(search.toLowerCase()) || 
-    post.body.toLowerCase().includes(search.toLowerCase())
-  );
+    post.title.toLowerCase().includes(search.toLowerCase()) || post.body.toLowerCase().includes(search.toLowerCase()));
   setSearchResults(filteredResults.reverse());
-}, [posts, search]);
+},[posts,search]);
 
 
 
@@ -102,4 +133,4 @@ const handleEdit = (id) =>{
   )
 }
 
-export default DataContext
+export default DataContext;

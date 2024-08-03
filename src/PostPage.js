@@ -8,7 +8,7 @@ const PostPage = () => {
   var post = posts.find((post) => (post.id).toString() === id);
  return(
     <main>
-      <article className="post">
+      <div className="post editPost">
       {post ?
       ( <>
       <h2 >{post.title}</h2>
@@ -26,7 +26,7 @@ const PostPage = () => {
         </>
       )
       }
-    </article>
+    </div>
     </main>
     )
 }

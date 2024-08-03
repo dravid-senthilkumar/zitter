@@ -3,8 +3,8 @@ import React from 'react'
 const Footer = () => {
   var year = new Date();
   return (
-  <footer className='Footer'>Copyrights <>&copy;</> {year.getFullYear()} </footer> 
+  <div className='Footer'>Copyrights <>&copy;</> {year.getFullYear()} </div> 
   )
 }
 
-export default Footer
+export default Footer;
