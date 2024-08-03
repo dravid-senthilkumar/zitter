@@ -10,7 +10,6 @@ const DataContext = createContext({})
 
 export const DataProvider = ({children}) => {
 
-    
 var [posts,setNewPosts] = useState([{
   id: 1,
   title: "My First Post",
@@ -21,7 +20,7 @@ var [posts,setNewPosts] = useState([{
   id: 2,
   title: "Second Post",
   datetime: "July 26, 2024 7:15:54 PM",
-  body: "Today I saw the Rayaan Movie it's fantastic...."
+  body: "Today I saw the Rayaan Movie it's fantastic"
 },
 {
   id: 3,
@@ -41,8 +40,7 @@ var [posts,setNewPosts] = useState([{
   datetime: "July 27, 2024 12:15:14 PM",
   body: "Anyone Online"
 }]);
-
-
+    
 var [search, setSearch] = useState('');
 var [searchResults , setSearchResults] = useState([]);
 var [title,setTitle] = useState('');
@@ -134,3 +132,4 @@ const handleEdit = (id) =>{
 }
 
 export default DataContext;
+
