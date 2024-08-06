@@ -6,7 +6,7 @@ const Header = ({title}) => {
   const {width} = useContext(DataContext);
   return (
     <header className='Header'>
-      <h1 >{title}  <p>-social networking platform</p> </h1>
+      <h1 >{title}  <p>-blog posting platform</p> </h1>
       {width < 768 ? <FaMobileAlt /> : width < 992 ? <FaTabletAlt /> : <FaLaptop />  }
     </header>
   )
